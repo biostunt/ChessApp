@@ -7,7 +7,7 @@
 
 class Figure{
 private:
-    // when user choose the Figure, this class gets unique id;
+    // when user chooses the Figure, this class gets unique id;
     // id0 = empty slot, id1 = king, id2 = queen, ......
     //
     int id;
@@ -27,24 +27,26 @@ private:
         EmptySlot(int x, int y) : Position(x, y){}
     };
 
-    class Peshka : Position{
-        //Please Change name of this class on translated
+    class Pawn : Position{
+        //Please Change name of this class on translated - done!
     };
 
-    class Elephant : Position{
-
-    };
-
-    class Horse : Position{
+    class Bishop : Position{
 
     };
 
-    class King : Peshka, Position {
+    class Knight : Position{
 
     };
 
-    class Queen : Elephant, Horse, Position{
+    class King : Pawn, Position {
 
+    };
+
+    class Queen : Bishop, Castle, Position{
+
+    };
+    class Castle : Position{
     };
 
 
@@ -63,9 +65,10 @@ public:
     EmptySlot *emptySlot;
     King *king;
     Queen *queen;
-    Elephant *elephant;
-    Horse *horse;
-    Peshka *peshka;
+    Bishop *bishop; //changed for original name
+    Knight *knight; // the same
+    Pawn *pawn; //the same
+    Castle *castle;  //Have added a new class
     RequireNode *requireNode;
 
     Figure(int id, int x, int y){
