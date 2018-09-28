@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/biostunt/CLionProjects/ChessApp/Node.h
+
+/home/biostunt/CLionProjects/ChessApp/main.cpp
+iostream
+-
+Node.h
+/home/biostunt/CLionProjects/ChessApp/Node.h
+
