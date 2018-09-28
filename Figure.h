@@ -105,8 +105,6 @@ private:
                 rook = new Rook(x,y);
             case 6:
                 pawn = new Pawn(x,y);
-            case 7:
-                requireNode = new RequireNode(x,y);
         }
     }
 
