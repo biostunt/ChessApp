@@ -4,4 +4,5 @@ project(ChessApp)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(ChessApp main.cpp
-        Node.h ChessField.h)
+        ChessField.h
+        Interface.h)

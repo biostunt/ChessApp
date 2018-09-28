@@ -5,7 +5,6 @@
 #ifndef CHESSAPP_CHESSFIELD_H
 #define CHESSAPP_CHESSFIELD_H
 
-#include "Node.h"
 
 
 
