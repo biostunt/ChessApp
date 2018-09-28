@@ -87,6 +87,9 @@
 		<Unit filename="/home/biostunt/CLionProjects/ChessApp/ChessField.h">
 			<Option target="ChessApp"/>
 		</Unit>
+		<Unit filename="/home/biostunt/CLionProjects/ChessApp/Figure.h">
+			<Option target="ChessApp"/>
+		</Unit>
 		<Unit filename="/home/biostunt/CLionProjects/ChessApp/Interface.h">
 			<Option target="ChessApp"/>
 		</Unit>
