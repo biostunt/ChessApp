@@ -23,6 +23,9 @@ public:
         this->size = 8;
         initialize();
     }
+    int getSize(){
+        return size;
+    }
 
 };
 
