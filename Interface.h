@@ -13,13 +13,14 @@ using namespace std;
 class Interface{
 public:
     Interface(){}
+
     void getText(int point){
         switch(point){
             case 0:
                 cout << "Введите размер полного поля: ";
             case 1:
-                cout << "0. Закончить" << endl;
                 cout << "Какую фигуру добавить?" << endl;
+                cout << "0. Закончить" << endl;
                 cout << "1. Король" << endl;
                 cout << "2. Королева" << endl;
                 cout << "3. Слон" << endl;
