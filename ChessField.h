@@ -4,9 +4,8 @@
 
 #ifndef CHESSAPP_CHESSFIELD_H
 #define CHESSAPP_CHESSFIELD_H
-
-
 #include <iostream>
+#include "Figure.h"
 using namespace std;
 
 class ChessField{
@@ -39,5 +38,6 @@ public:
     }
 
 };
+
 
 #endif //CHESSAPP_CHESSFIELD_H
