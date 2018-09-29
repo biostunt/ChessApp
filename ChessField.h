@@ -19,9 +19,17 @@ private:
   }   
   for (int i = 0; i < N; i++)
         for (int j = 0; j < M; j++)
-           Field[i][j]= new Field(0);
+           {
+		
+        	Pawn[i][j]= new Pawn(0);
+        	King [i][j]= new King(0);
+    		Queen [i][j]= new Queen(0);
+    		Elephant [i][j]= new Elephant(0);
+    		Horse [i][j]= new Horse(0);
+    		Rook [i][j]= new Rook(0);
+         }  
 
-   	for (int i = 0; i < n; i++) {
+   	for (int i = 0; i < N; i++) {
     delete [] Field[i];  
   } }
 public:
