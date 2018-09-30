@@ -31,7 +31,6 @@ public:
                 cout << "Введите координаты фигуры: ";
             case 3:
                 cout << "Введите координаты ячейки для проверки";
-
         }
     }
     void getCodeText(int point){

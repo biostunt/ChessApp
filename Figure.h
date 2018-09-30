@@ -9,6 +9,8 @@
 #ifndef CHESSAPP_FIGURE_H
 #define CHESSAPP_FIGURE_H
 
+#include "CodeStatement.h"
+
 class Figure {
 private:
     // when user choose the Figure, this class gets unique id;
@@ -33,9 +35,7 @@ private:
 
     class Rook : virtual Position{
     public:
-        Rook(int x,int y) : Position(x,y){
-
-        }
+        Rook(int x,int y) : Position(x,y){}
     };
 
     // пешка готова
@@ -109,9 +109,16 @@ private:
                 pawn = new Pawn(x,y);
         }
     }
+    int getCheckingCode(int id,int x, int y){
+        switch(id){
+            case 6:
+                return pawn->checkingFunction(x,y);
+        }
+    }
 
 
 public:
+    CodeStatement *codeStatement = new CodeStatement();
     EmptySlot *emptySlot;
     King *king;
     Queen *queen;
@@ -126,12 +133,13 @@ public:
     }
 
     int checkStatement(int id, int x, int y){
-        switch(id){
-        }
+                codeStatement->decode(id,getCheckingCode(id,x,y));
     }
+
     void setSize(int size){
         this->size = size;
     }
+    int getId(){return id;}
 
 };
 

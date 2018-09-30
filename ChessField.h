@@ -9,7 +9,7 @@
 
 class ChessField{
 private:
-    int size, id;
+    int size;
     Figure ***chessField;
     void initialize() {
         chessField = new Figure** [size];
@@ -33,7 +33,10 @@ public:
         return size;
     }
 
-    void add(int x, int y){
+    void add(int id,int x, int y){
+        if(chessField[x][y]->getId() == 0){
+            throw new Exception; //Добавить ошибку, что в клетке уже  находится фигура
+        }
         switch(id){
             case 1:
                 chessField[x][y] = new Figure(id,x,y);
@@ -48,6 +51,12 @@ public:
             case 6:
                 chessField[x][y] = new Figure(id,x,y);
         }
+    }
+    void startChecking(int x, int y){
+        for(int i = 0; i < size; i++)
+            for(int j = 0; j < size; j++)
+                if(chessField[i][j]->getId() != 0)
+                    chessField[i][j]->checkStatement(chessField[i][j]->getId(),x,y);
     }
 
     Figure* getFigure(int x, int y){

@@ -150,6 +150,33 @@ ChessField.cpp.s:
 	$(MAKE) -f CMakeFiles/ChessApp.dir/build.make CMakeFiles/ChessApp.dir/ChessField.cpp.s
 .PHONY : ChessField.cpp.s
 
+FieldContainer.o: FieldContainer.cpp.o
+
+.PHONY : FieldContainer.o
+
+# target to build an object file
+FieldContainer.cpp.o:
+	$(MAKE) -f CMakeFiles/ChessApp.dir/build.make CMakeFiles/ChessApp.dir/FieldContainer.cpp.o
+.PHONY : FieldContainer.cpp.o
+
+FieldContainer.i: FieldContainer.cpp.i
+
+.PHONY : FieldContainer.i
+
+# target to preprocess a source file
+FieldContainer.cpp.i:
+	$(MAKE) -f CMakeFiles/ChessApp.dir/build.make CMakeFiles/ChessApp.dir/FieldContainer.cpp.i
+.PHONY : FieldContainer.cpp.i
+
+FieldContainer.s: FieldContainer.cpp.s
+
+.PHONY : FieldContainer.s
+
+# target to generate assembly for a file
+FieldContainer.cpp.s:
+	$(MAKE) -f CMakeFiles/ChessApp.dir/build.make CMakeFiles/ChessApp.dir/FieldContainer.cpp.s
+.PHONY : FieldContainer.cpp.s
+
 Figure.o: Figure.cpp.o
 
 .PHONY : Figure.o
@@ -216,6 +243,9 @@ help:
 	@echo "... ChessField.o"
 	@echo "... ChessField.i"
 	@echo "... ChessField.s"
+	@echo "... FieldContainer.o"
+	@echo "... FieldContainer.i"
+	@echo "... FieldContainer.s"
 	@echo "... Figure.o"
 	@echo "... Figure.i"
 	@echo "... Figure.s"

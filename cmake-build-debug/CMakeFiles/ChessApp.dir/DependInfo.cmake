@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/biostunt/CLionProjects/ChessApp/ChessField.cpp" "/home/biostunt/CLionProjects/ChessApp/cmake-build-debug/CMakeFiles/ChessApp.dir/ChessField.cpp.o"
+  "/home/biostunt/CLionProjects/ChessApp/FieldContainer.cpp" "/home/biostunt/CLionProjects/ChessApp/cmake-build-debug/CMakeFiles/ChessApp.dir/FieldContainer.cpp.o"
   "/home/biostunt/CLionProjects/ChessApp/Figure.cpp" "/home/biostunt/CLionProjects/ChessApp/cmake-build-debug/CMakeFiles/ChessApp.dir/Figure.cpp.o"
   "/home/biostunt/CLionProjects/ChessApp/main.cpp" "/home/biostunt/CLionProjects/ChessApp/cmake-build-debug/CMakeFiles/ChessApp.dir/main.cpp.o"
   )

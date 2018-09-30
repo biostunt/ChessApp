@@ -90,6 +90,12 @@
 		<Unit filename="/home/biostunt/CLionProjects/ChessApp/ChessField.h">
 			<Option target="ChessApp"/>
 		</Unit>
+		<Unit filename="/home/biostunt/CLionProjects/ChessApp/FieldContainer.cpp">
+			<Option target="ChessApp"/>
+		</Unit>
+		<Unit filename="/home/biostunt/CLionProjects/ChessApp/FieldContainer.h">
+			<Option target="ChessApp"/>
+		</Unit>
 		<Unit filename="/home/biostunt/CLionProjects/ChessApp/Figure.cpp">
 			<Option target="ChessApp"/>
 		</Unit>

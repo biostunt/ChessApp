@@ -3,4 +3,8 @@ project(ChessApp)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(ChessApp main.cpp ChessField.cpp ChessField.h Figure.cpp Figure.h  Interface.h)
+add_executable(ChessApp main.cpp
+        ChessField.cpp ChessField.h
+        Figure.cpp Figure.h
+        FieldContainer.cpp FieldContainer.h
+        Interface.h)

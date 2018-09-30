@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ChessApp.dir/main.cpp.o"
   "CMakeFiles/ChessApp.dir/ChessField.cpp.o"
   "CMakeFiles/ChessApp.dir/Figure.cpp.o"
+  "CMakeFiles/ChessApp.dir/FieldContainer.cpp.o"
   "ChessApp.pdb"
   "ChessApp"
 )
