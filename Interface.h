@@ -14,7 +14,7 @@ class Interface{
 public:
     Interface(){}
 
-    void getText(int point){
+    void getInterfaceText(int point){
         switch(point){
             case 0:
                 cout << "Введите размер полного поля: ";
@@ -36,10 +36,14 @@ public:
     }
     void getCodeText(int point){
         switch(point){
-            case 1:
+            case 22:
                 cout << "не может переместиться или съесть из-за препятствия\n";
-            case 2:
+            case 11:
                 cout << "может переместиться или сьесть фигуру в заданной точке\n";
+            case 21:
+                cout << "не может переместиться, но может съесть фигуру\n";
+            case 12:
+                cout << "может переместиться, но не может съесть фигуру\n";
         }
     }
     void getFigureText(int id){
