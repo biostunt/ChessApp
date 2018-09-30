@@ -1,20 +1,21 @@
 //
-// Created by biostunt on 28.09.18.
+// Created by biostunt on 29.09.18.
 //
+
+
+
+
 
 #ifndef CHESSAPP_FIGURE_H
 #define CHESSAPP_FIGURE_H
 
-#include "ChessField.h"
-
-class Figure{
+class Figure {
 private:
     // when user choose the Figure, this class gets unique id;
     // id0 = empty slot, id1 = king, id2 = queen, ......
     //
     int size;
     int id;
-
     class Position{
     public:
         Position(int x, int y){
@@ -130,7 +131,6 @@ public:
 
 
 };
-
 
 
 #endif //CHESSAPP_FIGURE_H

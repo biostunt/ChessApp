@@ -6,11 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/home/biostunt/CLionProjects/ChessApp/Node.h
+/home/biostunt/CLionProjects/ChessApp/ChessField.cpp
+ChessField.h
+/home/biostunt/CLionProjects/ChessApp/ChessField.h
+Figure.h
+/home/biostunt/CLionProjects/ChessApp/Figure.h
+
+/home/biostunt/CLionProjects/ChessApp/ChessField.h
+Figure.cpp
+/home/biostunt/CLionProjects/ChessApp/Figure.cpp
+
+/home/biostunt/CLionProjects/ChessApp/Figure.cpp
+Figure.h
+/home/biostunt/CLionProjects/ChessApp/Figure.h
+ChessField.h
+/home/biostunt/CLionProjects/ChessApp/ChessField.h
+
+/home/biostunt/CLionProjects/ChessApp/Figure.h
 
 /home/biostunt/CLionProjects/ChessApp/main.cpp
-iostream
--
-Node.h
-/home/biostunt/CLionProjects/ChessApp/Node.h
 

@@ -71,7 +71,7 @@ CMAKE_BINARY_DIR = /home/biostunt/CLionProjects/ChessApp/cmake-build-debug
 CMakeFiles/ChessApp.dir/all:
 	$(MAKE) -f CMakeFiles/ChessApp.dir/build.make CMakeFiles/ChessApp.dir/depend
 	$(MAKE) -f CMakeFiles/ChessApp.dir/build.make CMakeFiles/ChessApp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/biostunt/CLionProjects/ChessApp/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target ChessApp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/biostunt/CLionProjects/ChessApp/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target ChessApp"
 .PHONY : CMakeFiles/ChessApp.dir/all
 
 # Include target in all.
@@ -81,7 +81,7 @@ all: CMakeFiles/ChessApp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ChessApp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/biostunt/CLionProjects/ChessApp/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/biostunt/CLionProjects/ChessApp/cmake-build-debug/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ChessApp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/biostunt/CLionProjects/ChessApp/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/ChessApp.dir/rule

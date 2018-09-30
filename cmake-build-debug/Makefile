@@ -123,6 +123,60 @@ ChessApp/fast:
 	$(MAKE) -f CMakeFiles/ChessApp.dir/build.make CMakeFiles/ChessApp.dir/build
 .PHONY : ChessApp/fast
 
+ChessField.o: ChessField.cpp.o
+
+.PHONY : ChessField.o
+
+# target to build an object file
+ChessField.cpp.o:
+	$(MAKE) -f CMakeFiles/ChessApp.dir/build.make CMakeFiles/ChessApp.dir/ChessField.cpp.o
+.PHONY : ChessField.cpp.o
+
+ChessField.i: ChessField.cpp.i
+
+.PHONY : ChessField.i
+
+# target to preprocess a source file
+ChessField.cpp.i:
+	$(MAKE) -f CMakeFiles/ChessApp.dir/build.make CMakeFiles/ChessApp.dir/ChessField.cpp.i
+.PHONY : ChessField.cpp.i
+
+ChessField.s: ChessField.cpp.s
+
+.PHONY : ChessField.s
+
+# target to generate assembly for a file
+ChessField.cpp.s:
+	$(MAKE) -f CMakeFiles/ChessApp.dir/build.make CMakeFiles/ChessApp.dir/ChessField.cpp.s
+.PHONY : ChessField.cpp.s
+
+Figure.o: Figure.cpp.o
+
+.PHONY : Figure.o
+
+# target to build an object file
+Figure.cpp.o:
+	$(MAKE) -f CMakeFiles/ChessApp.dir/build.make CMakeFiles/ChessApp.dir/Figure.cpp.o
+.PHONY : Figure.cpp.o
+
+Figure.i: Figure.cpp.i
+
+.PHONY : Figure.i
+
+# target to preprocess a source file
+Figure.cpp.i:
+	$(MAKE) -f CMakeFiles/ChessApp.dir/build.make CMakeFiles/ChessApp.dir/Figure.cpp.i
+.PHONY : Figure.cpp.i
+
+Figure.s: Figure.cpp.s
+
+.PHONY : Figure.s
+
+# target to generate assembly for a file
+Figure.cpp.s:
+	$(MAKE) -f CMakeFiles/ChessApp.dir/build.make CMakeFiles/ChessApp.dir/Figure.cpp.s
+.PHONY : Figure.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +213,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... ChessApp"
+	@echo "... ChessField.o"
+	@echo "... ChessField.i"
+	@echo "... ChessField.s"
+	@echo "... Figure.o"
+	@echo "... Figure.i"
+	@echo "... Figure.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
