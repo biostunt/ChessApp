@@ -34,6 +34,30 @@ public:
 
         }
     }
+    void getCodeText(int point){
+        switch(point){
+            case 1:
+                cout << "не может переместиться или съесть из-за препятствия\n";
+            case 2:
+                cout << "может переместиться или сьесть фигуру в заданной точке\n";
+        }
+    }
+    void getFigureText(int id){
+        switch(id){
+            case 1:
+                cout << "Король ";
+            case 2:
+                cout << "Королева ";
+            case 3:
+                cout << "Слон ";
+            case 4:
+                cout << "Конь ";
+            case 5:
+                cout << "Ладья ";
+            case 6:
+                cout << "Пешка ";
+        }
+    }
 };
 
 #endif //CHESSAPP_INTERFACE_H

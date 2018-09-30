@@ -76,6 +76,7 @@ private:
     class Horse : virtual Position{
     public:
         Horse(int x,int y) : Position(x,y){}
+
     };
 
     // король готов
@@ -109,6 +110,7 @@ private:
         }
     }
 
+
 public:
     EmptySlot *emptySlot;
     King *king;
@@ -125,10 +127,11 @@ public:
 
     int checkStatement(int id, int x, int y){
         switch(id){
-
         }
     }
-
+    void setSize(int size){
+        this->size = size;
+    }
 
 };
 
