@@ -33,32 +33,44 @@ private:
         int checkStep(int x, int y);
     public:
         Pawn(int x, int y) : Position(x,y){}
-        int checkingFunction(int x, int y);
-    };
-    class King : Pawn, virtual Position {
-    public:
-        King(int x, int y);
+        int checkPawn(int x, int y);
     };
     class Horse : virtual Position{
     public:
         Horse(int x,int y);
-        int checkingFunction(int x, int y);
+        int checkHorse(int x, int y);
     };
-
-    // не готово
     class Rook : virtual Position{
+    private:
+        bool Vertical = false;
+        bool Horizontal = false;
+        bool onTrajectory(int x, int y);
+        int checkHorizontal(int x);
+        int checkVertical(int y);
     public:
-        Rook(int x,int y) : Position(x,y){}
+        Rook(int x,int y);;
+        int checkRook(int x, int y);
     };
+    // не готово
     class Elephant : virtual Position{
+    private:
+        bool onTrajectory(int x, int y);
+        int RightUpLeftDown(int x, int y);
+        int LeftUpRightDown(int x, int y);
     public:
-        Elephant(int x, int y) : Position(x,y){}
+        Elephant(int x, int y);
+        int checkElephant(int x, int y);
     };
     class Queen : Elephant, Rook, virtual Position{
     public:
-        Queen(int x,int y) : Elephant(x,y), Rook(x,y), Position(x,y){}
+        Queen(int x,int y);
+        int checkQueen(int x, int y);
     };
-
+    class King : Pawn, virtual Position {
+    public:
+        King(int x, int y);
+        int checkKing(int x, int y);
+    };
 
     void initialize(int x, int y);
     int getCheckingCode(int id,int x, int y);

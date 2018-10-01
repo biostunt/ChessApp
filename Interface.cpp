@@ -26,6 +26,7 @@ void Interface::getInterfaceText(int point){
 }
 void Interface::getCodeText(int point){
     switch(point){
+        //default answers
         case 22:
             cout << "не может переместиться или съесть\n";
         case 11:
@@ -34,6 +35,9 @@ void Interface::getCodeText(int point){
             cout << "не может переместиться, но может съесть фигуру\n";
         case 12:
             cout << "может переместиться, но не может съесть фигуру\n";
+        //answers for Rook
+        case 31:
+            cout << "имеет точку на траектории, но не может переместиться из-за преград\n";
     }
 }
 void Interface::getFigureById(int id){
