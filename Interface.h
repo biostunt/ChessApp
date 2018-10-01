@@ -16,7 +16,7 @@ public:
 
     void getInterfaceText(int point);
     void getCodeText(int point);
-    void getFigureText(int id);
+    void getFigureById(int id);
 };
 
 #endif //CHESSAPP_INTERFACE_H

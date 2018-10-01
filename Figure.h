@@ -10,34 +10,23 @@
 #define CHESSAPP_FIGURE_H
 
 #include "CodeStatement.h"
-
+class ChessField;
 class Figure {
 private:
-    // when user choose the Figure, this class gets unique id;
-    // id0 = empty slot, id1 = king, id2 = queen, ......
-    //
-    int size;
     int id;
-    class ChessField;
+    // готово
+
     class Position{
     public:
         int x;
         int y;
-        Position(int x, int y){
-            this->x = x;
-            this->y = y;
-        }
+        Position(int x, int y);
 
     };
     class EmptySlot : virtual Position{
     public:
-        EmptySlot(int x, int y) : Position(x, y){}
+        EmptySlot(int x, int y);
     };
-    class Rook : virtual Position{
-    public:
-        Rook(int x,int y) : Position(x,y){}
-    };
-    // пешка готова
     class Pawn : virtual Position{
     private:
         int checkAte(int x, int y);
@@ -46,19 +35,24 @@ private:
         Pawn(int x, int y) : Position(x,y){}
         int checkingFunction(int x, int y);
     };
-    class Elephant : virtual Position{
+    class King : Pawn, virtual Position {
     public:
-        Elephant(int x, int y) : Position(x,y){}
+        King(int x, int y);
     };
     class Horse : virtual Position{
     public:
-        Horse(int x,int y) : Position(x,y){}
-
+        Horse(int x,int y);
+        int checkingFunction(int x, int y);
     };
-    // король готов
-    class King : Pawn, virtual Position {
+
+    // не готово
+    class Rook : virtual Position{
     public:
-        King(int x, int y) : Pawn(x,y), Position(x,y){}
+        Rook(int x,int y) : Position(x,y){}
+    };
+    class Elephant : virtual Position{
+    public:
+        Elephant(int x, int y) : Position(x,y){}
     };
     class Queen : Elephant, Rook, virtual Position{
     public:
@@ -71,7 +65,7 @@ private:
 
 
 public:
-    ChessField* chessField;
+    static ChessField* chessField;
     CodeStatement *codeStatement = new CodeStatement();
     EmptySlot *emptySlot;
     King *king;
