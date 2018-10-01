@@ -3,3 +3,10 @@
 //
 
 #include "CodeStatement.h"
+
+
+CodeStatement::CodeStatement() {}
+void CodeStatement::decode(int id, int code){
+    anInterface->getFigureById(id);
+    anInterface->getCodeText(code);
+}

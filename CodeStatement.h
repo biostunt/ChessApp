@@ -6,8 +6,6 @@
 #define CHESSAPP_CODESTATEMENT_H
 
 #include "Interface.h"
-#include <iostream>
-using namespace std;
 
 
 
@@ -15,11 +13,8 @@ class CodeStatement {
 private:
     Interface *anInterface = new Interface();
 public:
-    CodeStatement(){}
-    void decode(int id, int code){
-        anInterface->getFigureText(id);
-        anInterface->getCodeText(code);
-    }
+    CodeStatement();
+    void decode(int id, int code);
 };
 
 

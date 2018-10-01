@@ -18,106 +18,60 @@ private:
     //
     int size;
     int id;
+    class ChessField;
     class Position{
     public:
+        int x;
+        int y;
         Position(int x, int y){
             this->x = x;
             this->y = y;
         }
-        int x;
-        int y;
-    };
 
+    };
     class EmptySlot : virtual Position{
     public:
         EmptySlot(int x, int y) : Position(x, y){}
     };
-
     class Rook : virtual Position{
     public:
         Rook(int x,int y) : Position(x,y){}
     };
-
     // пешка готова
     class Pawn : virtual Position{
     private:
-        int checkAte(int x, int y){
-            if(this->x + 1 == x && this->y + 1 == y)
-                return 1;
-            if(this->x + 1 == x && this->y - 1 == y)
-                return 1;
-            if(this->x - 1 == x && this->y + 1 == y)
-                return 1;
-            if(this->x - 1 == x && this->y - 1 == y)
-                return 1;
-            return 2;
-        }
-
-        int checkStep(int x, int y){
-            if(this->x == x && this->y + 1 == y)
-                return 10;
-            else
-                return 20;
-        }
+        int checkAte(int x, int y);
+        int checkStep(int x, int y);
     public:
-        Pawn(int x, int y) : Position(x,y){
-
-        }
-        int checkingFunction(int x, int y){
-            return checkStep(x,y) + checkAte(x,y);
-        }
+        Pawn(int x, int y) : Position(x,y){}
+        int checkingFunction(int x, int y);
     };
-
     class Elephant : virtual Position{
     public:
         Elephant(int x, int y) : Position(x,y){}
     };
-
     class Horse : virtual Position{
     public:
         Horse(int x,int y) : Position(x,y){}
 
     };
-
     // король готов
     class King : Pawn, virtual Position {
     public:
         King(int x, int y) : Pawn(x,y), Position(x,y){}
     };
-
     class Queen : Elephant, Rook, virtual Position{
     public:
         Queen(int x,int y) : Elephant(x,y), Rook(x,y), Position(x,y){}
     };
 
 
-    void initialize(int x, int y){
-        switch(id){
-            case 0:
-                emptySlot = new EmptySlot(x,y);
-            case 1:
-                king = new King(x,y);
-            case 2:
-                queen = new Queen(x,y);
-            case 3:
-                elephant = new Elephant(x,y);
-            case 4:
-                horse = new Horse(x,y);
-            case 5:
-                rook = new Rook(x,y);
-            case 6:
-                pawn = new Pawn(x,y);
-        }
-    }
-    int getCheckingCode(int id,int x, int y){
-        switch(id){
-            case 6:
-                return pawn->checkingFunction(x,y);
-        }
-    }
+    void initialize(int x, int y);
+    int getCheckingCode(int id,int x, int y);
 
 
 public:
+    ChessField* chessField;
     CodeStatement *codeStatement = new CodeStatement();
     EmptySlot *emptySlot;
     King *king;
@@ -127,20 +81,11 @@ public:
     Rook *rook;
     Pawn *pawn;
 
-    Figure(int id, int x, int y){
-        this->id = id;
-        initialize(x, y);
-    }
-
-    int checkStatement(int id, int x, int y){
-                codeStatement->decode(id,getCheckingCode(id,x,y));
-    }
-
-    void setSize(int size){
-        this->size = size;
-    }
-    int getId(){return id;}
-
+    Figure(int id, int x, int y);
+    void checkStatement(int id, int x, int y);
+    void setSize(int size);
+    int getId();
+    void setField(ChessField *chessField1);
 };
 
 

@@ -150,32 +150,32 @@ ChessField.cpp.s:
 	$(MAKE) -f CMakeFiles/ChessApp.dir/build.make CMakeFiles/ChessApp.dir/ChessField.cpp.s
 .PHONY : ChessField.cpp.s
 
-FieldContainer.o: FieldContainer.cpp.o
+CodeStatement.o: CodeStatement.cpp.o
 
-.PHONY : FieldContainer.o
+.PHONY : CodeStatement.o
 
 # target to build an object file
-FieldContainer.cpp.o:
-	$(MAKE) -f CMakeFiles/ChessApp.dir/build.make CMakeFiles/ChessApp.dir/FieldContainer.cpp.o
-.PHONY : FieldContainer.cpp.o
+CodeStatement.cpp.o:
+	$(MAKE) -f CMakeFiles/ChessApp.dir/build.make CMakeFiles/ChessApp.dir/CodeStatement.cpp.o
+.PHONY : CodeStatement.cpp.o
 
-FieldContainer.i: FieldContainer.cpp.i
+CodeStatement.i: CodeStatement.cpp.i
 
-.PHONY : FieldContainer.i
+.PHONY : CodeStatement.i
 
 # target to preprocess a source file
-FieldContainer.cpp.i:
-	$(MAKE) -f CMakeFiles/ChessApp.dir/build.make CMakeFiles/ChessApp.dir/FieldContainer.cpp.i
-.PHONY : FieldContainer.cpp.i
+CodeStatement.cpp.i:
+	$(MAKE) -f CMakeFiles/ChessApp.dir/build.make CMakeFiles/ChessApp.dir/CodeStatement.cpp.i
+.PHONY : CodeStatement.cpp.i
 
-FieldContainer.s: FieldContainer.cpp.s
+CodeStatement.s: CodeStatement.cpp.s
 
-.PHONY : FieldContainer.s
+.PHONY : CodeStatement.s
 
 # target to generate assembly for a file
-FieldContainer.cpp.s:
-	$(MAKE) -f CMakeFiles/ChessApp.dir/build.make CMakeFiles/ChessApp.dir/FieldContainer.cpp.s
-.PHONY : FieldContainer.cpp.s
+CodeStatement.cpp.s:
+	$(MAKE) -f CMakeFiles/ChessApp.dir/build.make CMakeFiles/ChessApp.dir/CodeStatement.cpp.s
+.PHONY : CodeStatement.cpp.s
 
 Figure.o: Figure.cpp.o
 
@@ -203,6 +203,33 @@ Figure.s: Figure.cpp.s
 Figure.cpp.s:
 	$(MAKE) -f CMakeFiles/ChessApp.dir/build.make CMakeFiles/ChessApp.dir/Figure.cpp.s
 .PHONY : Figure.cpp.s
+
+Interface.o: Interface.cpp.o
+
+.PHONY : Interface.o
+
+# target to build an object file
+Interface.cpp.o:
+	$(MAKE) -f CMakeFiles/ChessApp.dir/build.make CMakeFiles/ChessApp.dir/Interface.cpp.o
+.PHONY : Interface.cpp.o
+
+Interface.i: Interface.cpp.i
+
+.PHONY : Interface.i
+
+# target to preprocess a source file
+Interface.cpp.i:
+	$(MAKE) -f CMakeFiles/ChessApp.dir/build.make CMakeFiles/ChessApp.dir/Interface.cpp.i
+.PHONY : Interface.cpp.i
+
+Interface.s: Interface.cpp.s
+
+.PHONY : Interface.s
+
+# target to generate assembly for a file
+Interface.cpp.s:
+	$(MAKE) -f CMakeFiles/ChessApp.dir/build.make CMakeFiles/ChessApp.dir/Interface.cpp.s
+.PHONY : Interface.cpp.s
 
 main.o: main.cpp.o
 
@@ -243,12 +270,15 @@ help:
 	@echo "... ChessField.o"
 	@echo "... ChessField.i"
 	@echo "... ChessField.s"
-	@echo "... FieldContainer.o"
-	@echo "... FieldContainer.i"
-	@echo "... FieldContainer.s"
+	@echo "... CodeStatement.o"
+	@echo "... CodeStatement.i"
+	@echo "... CodeStatement.s"
 	@echo "... Figure.o"
 	@echo "... Figure.i"
 	@echo "... Figure.s"
+	@echo "... Interface.o"
+	@echo "... Interface.i"
+	@echo "... Interface.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
