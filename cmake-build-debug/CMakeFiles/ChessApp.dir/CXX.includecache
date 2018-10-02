@@ -11,18 +11,50 @@ ChessField.h
 /home/biostunt/CLionProjects/ChessApp/ChessField.h
 Figure.h
 /home/biostunt/CLionProjects/ChessApp/Figure.h
+ExceptionList.h
+/home/biostunt/CLionProjects/ChessApp/ExceptionList.h
 
 /home/biostunt/CLionProjects/ChessApp/ChessField.h
-Figure.cpp
-/home/biostunt/CLionProjects/ChessApp/Figure.cpp
+Figure.h
+/home/biostunt/CLionProjects/ChessApp/Figure.h
+TemplateField.h
+/home/biostunt/CLionProjects/ChessApp/TemplateField.h
+
+/home/biostunt/CLionProjects/ChessApp/CodeStatement.h
+Interface.h
+/home/biostunt/CLionProjects/ChessApp/Interface.h
+
+/home/biostunt/CLionProjects/ChessApp/ExceptionList.h
+iostream
+-
 
 /home/biostunt/CLionProjects/ChessApp/Figure.cpp
 Figure.h
 /home/biostunt/CLionProjects/ChessApp/Figure.h
+CodeStatement.h
+/home/biostunt/CLionProjects/ChessApp/CodeStatement.h
 ChessField.h
 /home/biostunt/CLionProjects/ChessApp/ChessField.h
 
 /home/biostunt/CLionProjects/ChessApp/Figure.h
+CodeStatement.h
+/home/biostunt/CLionProjects/ChessApp/CodeStatement.h
+TemplateField.h
+/home/biostunt/CLionProjects/ChessApp/TemplateField.h
+
+/home/biostunt/CLionProjects/ChessApp/Interface.h
+iostream
+-
+
+/home/biostunt/CLionProjects/ChessApp/TemplateField.h
 
 /home/biostunt/CLionProjects/ChessApp/main.cpp
+iostream
+-
+ChessField.h
+/home/biostunt/CLionProjects/ChessApp/ChessField.h
+Figure.h
+/home/biostunt/CLionProjects/ChessApp/Figure.h
+Interface.h
+/home/biostunt/CLionProjects/ChessApp/Interface.h
 

@@ -19,16 +19,21 @@ void Interface::getInterfaceText(int point){
             cout << "5. Ладья" << endl;
             cout << "6. Пешка" << endl;
         case 2:
-            cout << "Введите координаты фигуры: ";
+            cout << "Введите координаты фигуры: \n";
+        case 9:
+            cout << "Введите x: ";
+        case 6:
+            cout << "Введите y: ";
         case 3:
             cout << "Введите координаты ячейки для проверки";
     }
 }
 void Interface::getCodeText(int point){
     switch(point){
-        //default answers
+        default:
+
         case 22:
-            cout << "не может переместиться или съесть\n";
+            cout << "не может переместиться в ячейку или съесть ее\n";
         case 11:
             cout << "может переместиться или сьесть фигуру в заданной точке\n";
         case 21:

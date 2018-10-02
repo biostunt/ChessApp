@@ -3,12 +3,33 @@
 
 CMakeFiles/ChessApp.dir/ChessField.cpp.o: ../ChessField.cpp
 CMakeFiles/ChessApp.dir/ChessField.cpp.o: ../ChessField.h
-CMakeFiles/ChessApp.dir/ChessField.cpp.o: ../Figure.cpp
+CMakeFiles/ChessApp.dir/ChessField.cpp.o: ../CodeStatement.h
+CMakeFiles/ChessApp.dir/ChessField.cpp.o: ../ExceptionList.h
 CMakeFiles/ChessApp.dir/ChessField.cpp.o: ../Figure.h
+CMakeFiles/ChessApp.dir/ChessField.cpp.o: ../Interface.h
+CMakeFiles/ChessApp.dir/ChessField.cpp.o: ../TemplateField.h
+
+CMakeFiles/ChessApp.dir/CodeStatement.cpp.o: ../CodeStatement.cpp
+CMakeFiles/ChessApp.dir/CodeStatement.cpp.o: ../CodeStatement.h
+CMakeFiles/ChessApp.dir/CodeStatement.cpp.o: ../Interface.h
 
 CMakeFiles/ChessApp.dir/Figure.cpp.o: ../ChessField.h
+CMakeFiles/ChessApp.dir/Figure.cpp.o: ../CodeStatement.h
 CMakeFiles/ChessApp.dir/Figure.cpp.o: ../Figure.cpp
 CMakeFiles/ChessApp.dir/Figure.cpp.o: ../Figure.h
+CMakeFiles/ChessApp.dir/Figure.cpp.o: ../Interface.h
+CMakeFiles/ChessApp.dir/Figure.cpp.o: ../TemplateField.h
 
+CMakeFiles/ChessApp.dir/Interface.cpp.o: ../Interface.cpp
+CMakeFiles/ChessApp.dir/Interface.cpp.o: ../Interface.h
+
+CMakeFiles/ChessApp.dir/TemplateField.cpp.o: ../TemplateField.cpp
+CMakeFiles/ChessApp.dir/TemplateField.cpp.o: ../TemplateField.h
+
+CMakeFiles/ChessApp.dir/main.cpp.o: ../ChessField.h
+CMakeFiles/ChessApp.dir/main.cpp.o: ../CodeStatement.h
+CMakeFiles/ChessApp.dir/main.cpp.o: ../Figure.h
+CMakeFiles/ChessApp.dir/main.cpp.o: ../Interface.h
+CMakeFiles/ChessApp.dir/main.cpp.o: ../TemplateField.h
 CMakeFiles/ChessApp.dir/main.cpp.o: ../main.cpp
 

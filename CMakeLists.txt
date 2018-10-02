@@ -7,4 +7,5 @@ add_executable(ChessApp main.cpp
         ChessField.cpp ChessField.h
         Figure.cpp Figure.h
         Interface.h Interface.cpp
-        CodeStatement.cpp CodeStatement.h)
+        CodeStatement.cpp CodeStatement.h
+        )

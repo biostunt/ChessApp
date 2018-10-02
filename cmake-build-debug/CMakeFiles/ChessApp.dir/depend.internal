@@ -4,11 +4,32 @@
 CMakeFiles/ChessApp.dir/ChessField.cpp.o
  /home/biostunt/CLionProjects/ChessApp/ChessField.cpp
  /home/biostunt/CLionProjects/ChessApp/ChessField.h
- /home/biostunt/CLionProjects/ChessApp/Figure.cpp
+ /home/biostunt/CLionProjects/ChessApp/CodeStatement.h
+ /home/biostunt/CLionProjects/ChessApp/ExceptionList.h
  /home/biostunt/CLionProjects/ChessApp/Figure.h
+ /home/biostunt/CLionProjects/ChessApp/Interface.h
+ /home/biostunt/CLionProjects/ChessApp/TemplateField.h
+CMakeFiles/ChessApp.dir/CodeStatement.cpp.o
+ /home/biostunt/CLionProjects/ChessApp/CodeStatement.cpp
+ /home/biostunt/CLionProjects/ChessApp/CodeStatement.h
+ /home/biostunt/CLionProjects/ChessApp/Interface.h
 CMakeFiles/ChessApp.dir/Figure.cpp.o
  /home/biostunt/CLionProjects/ChessApp/ChessField.h
+ /home/biostunt/CLionProjects/ChessApp/CodeStatement.h
  /home/biostunt/CLionProjects/ChessApp/Figure.cpp
  /home/biostunt/CLionProjects/ChessApp/Figure.h
+ /home/biostunt/CLionProjects/ChessApp/Interface.h
+ /home/biostunt/CLionProjects/ChessApp/TemplateField.h
+CMakeFiles/ChessApp.dir/Interface.cpp.o
+ /home/biostunt/CLionProjects/ChessApp/Interface.cpp
+ /home/biostunt/CLionProjects/ChessApp/Interface.h
+CMakeFiles/ChessApp.dir/TemplateField.cpp.o
+ /home/biostunt/CLionProjects/ChessApp/TemplateField.cpp
+ /home/biostunt/CLionProjects/ChessApp/TemplateField.h
 CMakeFiles/ChessApp.dir/main.cpp.o
+ /home/biostunt/CLionProjects/ChessApp/ChessField.h
+ /home/biostunt/CLionProjects/ChessApp/CodeStatement.h
+ /home/biostunt/CLionProjects/ChessApp/Figure.h
+ /home/biostunt/CLionProjects/ChessApp/Interface.h
+ /home/biostunt/CLionProjects/ChessApp/TemplateField.h
  /home/biostunt/CLionProjects/ChessApp/main.cpp

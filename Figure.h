@@ -10,75 +10,81 @@
 #define CHESSAPP_FIGURE_H
 
 #include "CodeStatement.h"
+#include "ChessField.h"
 class ChessField;
 class Figure {
+
 private:
     int id;
-    // готово
 
+    CodeStatement *codeStatement = new CodeStatement();
+    // готово
     class Position{
     public:
         int x;
         int y;
-        Position(int x, int y);
+        int size;
+        ChessField *chessField;
+        Position(int x, int y,int size, ChessField *chessField);
 
     };
     class EmptySlot : virtual Position{
     public:
-        EmptySlot(int x, int y);
+        EmptySlot(int x, int y,int size, ChessField *chessField);
     };
     class Pawn : virtual Position{
-    private:
+    public:
+        Pawn(int x, int y,int size, ChessField *chessField);
+        int checkPawn(int x, int y);
         int checkAte(int x, int y);
         int checkStep(int x, int y);
-    public:
-        Pawn(int x, int y) : Position(x,y){}
-        int checkPawn(int x, int y);
     };
     class Horse : virtual Position{
     public:
-        Horse(int x,int y);
+        Horse(int x,int y,int size, ChessField *chessField);
         int checkHorse(int x, int y);
     };
     class Rook : virtual Position{
     private:
         bool Vertical = false;
         bool Horizontal = false;
+    public:
         bool onTrajectory(int x, int y);
         int checkHorizontal(int x);
         int checkVertical(int y);
-    public:
-        Rook(int x,int y);;
+        Rook(int x,int y,int size, ChessField *chessField);
         int checkRook(int x, int y);
     };
-    // не готово
     class Elephant : virtual Position{
     private:
-        bool onTrajectory(int x, int y);
-        int RightUpLeftDown(int x, int y);
-        int LeftUpRightDown(int x, int y);
+        bool RightUp = false;
+        bool LeftDown = false;
+        bool LeftUp = false;
+        bool RightDown = false;
     public:
-        Elephant(int x, int y);
+        bool onTrajectory(int x, int y);
+        int rightUpLeftDown(int x, int y);
+        int leftUpRightDown(int x, int y);
+        Elephant(int x, int y,int size, ChessField *chessField);
         int checkElephant(int x, int y);
     };
     class Queen : Elephant, Rook, virtual Position{
     public:
-        Queen(int x,int y);
+        Queen(int x,int y,int size, ChessField *chessField);
         int checkQueen(int x, int y);
     };
-    class King : Pawn, virtual Position {
+    class King : Pawn ,virtual Position {
     public:
-        King(int x, int y);
+        King(int x, int y,int size, ChessField *chessField);
         int checkKing(int x, int y);
     };
 
-    void initialize(int x, int y);
+    void initialize(int x, int y,int size,ChessField *chessField);
     int getCheckingCode(int id,int x, int y);
 
 
 public:
-    static ChessField* chessField;
-    CodeStatement *codeStatement = new CodeStatement();
+
     EmptySlot *emptySlot;
     King *king;
     Queen *queen;
@@ -86,12 +92,10 @@ public:
     Horse *horse;
     Rook *rook;
     Pawn *pawn;
-
-    Figure(int id, int x, int y);
+    Figure(ChessField *chessField,int id, int x, int y,int size);
     void checkStatement(int id, int x, int y);
-    void setSize(int size);
     int getId();
-    void setField(ChessField *chessField1);
+
 };
 
 
